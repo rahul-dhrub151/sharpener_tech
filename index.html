@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <form id="main_form" onsubmit="form_submit(event)">
+        <label for="expense_amount">Choose Expense Amount</label>
+        <input type="number" id="expense_amount" name="expense_amount" placeholder="Enter Amount">
+        <label for="des">Choose Description</label>
+        <input type="text" id="des" name="des" placeholder="Enter Description">
+        <label for="choose_category">Choose a Category</label>
+        <select id="choose_category" name="choose_category">
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="clothes">Clothes</option>
+            <option value="bills">Bills</option>
+            <option value="others">Others</option>
+        </select>
+        <input type="submit" value="Add Example">
+    </form>
+    <div>
+      <ul id="list">
+      </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
